@@ -10,3 +10,9 @@ def test_list_pets():
     response = repo.list_pets()
     print()
     print(response)
+
+@pytest.mark.skip(reason="db interaction")
+def test_delet_pet():
+    name = "belinha"
+    repo = PetsRepository(db_connection_handler)
+    repo.delete_pets(name)
