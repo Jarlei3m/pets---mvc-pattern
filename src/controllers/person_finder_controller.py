@@ -25,10 +25,10 @@ class PersonFinderController:
                 "type": "Person",
                 "count": 1,
                 "attributes": {
-                    "first_name": person["first_name"],
-                    "last_name": person["last_name"],
-                    "pet_name": person["pet_name"],
-                    "pet_type": person["pet_type"]
+                    "first_name": person.first_name,
+                    "last_name": person.last_name,
+                    "pet_name": person.pet_name,
+                    "pet_type": person.pet_type
                 }
             }
         }
