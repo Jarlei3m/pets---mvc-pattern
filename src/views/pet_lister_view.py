@@ -11,4 +11,4 @@ class PetListerView(ViewInterface):
     def handle(self, http_request: HttpRequest) -> HttpResponse:
         body_response = self.__controller.list()
 
-        HttpResponse(status_code=200, body=body_response)
+        return HttpResponse(status_code=200, body=body_response)
